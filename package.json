@@ -1,0 +1,45 @@
+{
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "name": "vue-light-builder",
+  "version": "0.1.0",
+  "description": "Light Vue builder",
+  "main": "./lib/appbuilder.js",
+  "dependencies": {
+    "clean-css": "^4.2.3",
+    "node-watch": "^0.6.3",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11",
+    "ws": "^7.2.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "sass": "^1.25.0",
+    "terser": "^4.6.3"
+  },
+  "scripts": {
+    "start": "node ./live.js",
+    "test": "mocha --reporter spec --bail --check-leaks test/"
+  },
+  "bin": {
+    "vue-light-create": "./create.js",
+    "vue-light-build": "./build.js",
+    "vue-light-live": "./live.js"
+  },
+  "keywords": [
+    "vue",
+    "light",
+    "live",
+    "livereload",
+    "reload",
+    "build",
+    "builder"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dariuski/vue-light-builder.git"
+  },
+  "author": "Darius Kisonas <dariuski256@gmail.com>",
+  "license": "MIT"
+}
